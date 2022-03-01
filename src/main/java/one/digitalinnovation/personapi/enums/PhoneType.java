@@ -7,10 +7,14 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum PhoneType {
 	
-	HOME,
-	MOBILE,
-	COMMERCIAL;
-	
-	private final String description = "";
+    HOME("Home"),
+    MOBILE("Mobile"),
+    COMMERCIAL("Commercial");
 
+    PhoneType(String string) {
+		this.description = "";
+		// TODO Auto-generated constructor stub
+	}
+
+	private final String description;
 }
